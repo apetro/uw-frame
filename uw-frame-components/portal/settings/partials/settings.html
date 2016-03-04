@@ -1,11 +1,12 @@
 <frame-page app-title='Beta Settings'
               app-icon='fa-gears'>
   
-  <md-card ng-repeat='option in options'>
+  <md-card flex="96" flex-offset="2"
+    ng-repeat='option in options'>
     <setting-option></setting-option>
   </md-card>
   
-  <md-card>
+  <md-card flex="96" flex-offset="2">
       <md-card-content>
         <h4>Theme Selector</h4>
         <small>Pick which place you call home</small>
@@ -14,7 +15,7 @@
       </md-card-content>
   </md-card>
   
-  <md-card>
+  <md-card flex="96" flex-offset="2">
     <md-card-content>
       <h4>Danger Zone</h4>
         <span class="btn-group">
