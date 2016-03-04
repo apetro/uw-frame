@@ -6,11 +6,11 @@
 </md-card-header>
 <md-card-content>
   
-  <md-switch ng-model="$storage[option.id]">
+  <md-switch ng-model="$storage[option.id]" aria-label="{{option.title}}">
     {{option.title}}
+    <md-tooltip>
+      {{option.description}}
+    </md-tooltip>
   </md-switch>
     
 </md-card-content>
-<md-card-footer>
-{{option.description}}
-</md-card-footer>
