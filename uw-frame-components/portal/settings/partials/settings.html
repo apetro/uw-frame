@@ -29,8 +29,11 @@
       </md-card-header-text>
     </md-card-header>
     <md-card-content>
-      <select class="form-control" ng-options="item as item.name for item in THEMES track by item.name" ng-model="portal.theme">
-      </select>
+      <md-input-container>
+        <md-select ng-model="portal.theme" ng-model-options="{trackBy: '$value.name'}">>
+          <md-option ng-value="item" ng-repeat="item in THEMES">{{ item.name }}</md-option>
+        </md-select>
+      </md-input-container>
     </md-card-content>
   </md-card>
   
