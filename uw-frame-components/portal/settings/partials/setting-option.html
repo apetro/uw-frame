@@ -5,10 +5,15 @@
   </md-card-header-text>
 </md-card-header>
 <md-card-content>
-    <span class="btn-group">
-        <label class="btn" ng-class="{'btn-success' : $storage[option.id], 'btn-default' : !$storage[option.id] }" ng-model="$storage[option.id]" btn-radio="true">On</label>
-        <label class="btn" ng-class="{'btn-success' : $storage[option.id], 'btn-default' : !$storage[option.id] }" ng-model="$storage[option.id]" btn-radio="false">Off</label>
-    </span>
+  
+  <md-radio-group ng-model="$storage[option.id]">
+    <md-radio-button value="true">
+     On
+    </md-radio-button>
+    <md-radio-button value="false">
+     Off
+    </md-radio-button>
+  </md-radio-group>
     
 </md-card-content>
 <md-card-footer>
