@@ -1,9 +1,24 @@
 <frame-page app-title='Beta Settings'
               app-icon='fa-gears'>
   
-  <md-card flex="96" flex-offset="2"
-    ng-repeat='option in options'>
-    <setting-option></setting-option>
+  <md-card flex="96" flex-offset="2">
+    
+    <md-card-header>
+      <md-card-header-text>
+        <span class="md-title">Miscellaneous Options</span>
+        <span class="md-subhead">True-false selectors defined in app-config APP_BETA_FEATURES (and FRAME_BETA_FEATURES) and storing to $storage .</span>
+      </md-card-header-text>
+    </md-card-header>
+    
+    <md-switch 
+      ng-repeat="option in options"
+      ng-model="$storage[option.id]" aria-label="{{option.title}}">
+      {{option.title}}
+      <md-tooltip>
+        {{option.description}}
+      </md-tooltip>
+    </md-switch>
+    
   </md-card>
   
   <md-card flex="96" flex-offset="2">
