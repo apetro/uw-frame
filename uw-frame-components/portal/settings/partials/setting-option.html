@@ -6,14 +6,9 @@
 </md-card-header>
 <md-card-content>
   
-  <md-radio-group ng-model="$storage[option.id]">
-    <md-radio-button value="true">
-     On
-    </md-radio-button>
-    <md-radio-button value="false">
-     Off
-    </md-radio-button>
-  </md-radio-group>
+  <md-switch ng-model="$storage[option.id]">
+    {{option.title}}
+  </md-switch>
     
 </md-card-content>
 <md-card-footer>
