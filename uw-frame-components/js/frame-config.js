@@ -66,6 +66,15 @@ define(['angular'], function(angular) {
             "ariaLabelTitle" : "My U W",
             "crestalt" : "UW System Logo",
             "group" : "default"
+          },
+          {
+            "name" : "rutgers",
+            "crest" : "img/rutgers-52.gif",
+            "title" : "MyRutgers",
+            "subtitle" : "beta",
+            "ariaLabelTitle" : "My Rutgers",
+            "crestalt" : "Rutgers crest",
+            "group" : "default"
           }
         ])
         .constant('FRAME_URLS', {
