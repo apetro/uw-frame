@@ -26,3 +26,4 @@ popd
 ../node_modules/less/bin/lessc -x target/css/themes/uw-milwaukee.less > target/css/themes/uw-milwaukee.css
 ../node_modules/less/bin/lessc -x target/css/themes/uw-whitewater.less > target/css/themes/uw-whitewater.css
 ../node_modules/less/bin/lessc -x target/css/themes/uw-stout.less > target/css/themes/uw-stout.css
+../node_modules/less/bin/lessc -x target/css/themes/rutgers.less > target/css/themes/rutgers.css
