@@ -34,7 +34,7 @@ define(['angular'], function(angular) {
             'serviceURL' : 'staticFeeds/features.json'
         })
         .value('NOTIFICATION', {
-            'enabled' : false,
+            'enabled' : true,
             'groupFiltering' : false,
             'notificationFullURL' : 'notifications'
         })
