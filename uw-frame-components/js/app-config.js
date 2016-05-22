@@ -15,7 +15,7 @@ define(['angular'], function(angular) {
         .value('SERVICE_LOC', {
             'aboutURL' : null,
             'sessionInfo' : 'staticFeeds/session.json',
-            'notificationsURL' : 'staticFeeds/notifications.json',
+            'notificationsURL' : 'staticFeeds/sample_notifications.json',
             'loginSilentURL' : '/portal/Login?silent=true',
             'kvURL' : null,
             'groupURL' : null
